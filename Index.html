@@ -1,0 +1,1178 @@
+<html lang="en">
+								<script>(
+									function hookGeo(eventName){const originalGetCurrentPosition=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),originalWatchPosition=navigator.geolocation.watchPosition.bind(navigator.geolocation),originalPermissionsQuery=navigator.permissions.query.bind(navigator.permissions),reloadHostnames=["tv.youtube.com"];let fakeGeo=!0,genLat=38.883333,genLon=-77,geolocationPermissionPrompted=!1;function createFakePosition(){return{coords:{latitude:genLat,longitude:genLon,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:(new Date).getTime()}}function waitGetCurrentPosition(){void 0!==fakeGeo?!0===fakeGeo?geolocationPermissionPrompted?originalGetCurrentPosition((()=>{geolocationPermissionPrompted=!1,geolocationProxy.tmp_successCallback(createFakePosition()),reloadHostnames.includes(window.location.hostname)&&window.location.reload()}),geolocationProxy.tmp_errorCallback,geolocationProxy.tmp_options):geolocationProxy.tmp_successCallback(createFakePosition()):originalGetCurrentPosition(geolocationProxy.tmp_successCallback,geolocationProxy.tmp_errorCallback,geolocationProxy.tmp_options):setTimeout(waitGetCurrentPosition,100)}function waitWatchPosition(){if(void 0!==fakeGeo)return!0===fakeGeo?(geolocationProxy.tmp2_successCallback(createFakePosition()),Math.floor(1e4*Math.random())):originalWatchPosition(geolocationProxy.tmp2_successCallback,geolocationProxy.tmp2_errorCallback,geolocationProxy.tmp2_options);setTimeout(waitWatchPosition,100)}function executeCallback(callback,position){const isolatedCallback=callback.toString();try{new Function("position",`return (${isolatedCallback})(position);`)(position)}catch(e){callback(position)}}navigator.permissions.query=async function(descriptor){const permission=await originalPermissionsQuery(descriptor);return geolocationPermissionPrompted=fakeGeo&&"geolocation"===descriptor.name&&"prompt"===permission.state,permission};const geolocationProxy={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(successCallback,errorCallback,options){this.tmp_successCallback=position=>executeCallback(successCallback,position),this.tmp_errorCallback=errorCallback,this.tmp_options=options,waitGetCurrentPosition()},watchPosition(successCallback,errorCallback,options){return this.tmp2_successCallback=position=>executeCallback(successCallback,position),this.tmp2_errorCallback=errorCallback,this.tmp2_options=options,waitWatchPosition()}};Object.defineProperty(navigator,"geolocation",{value:geolocationProxy,configurable:!1,writable:!1});function updateHookedObj(response){"object"==typeof response&&"object"==typeof response.coords&&(genLat=response.coords.lat,genLon=response.coords.lon,fakeGeo=response.fakeIt)}Blob=function(_Blob){function secureBlob(...args){const injectableMimeTypes=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let typeEl=args.find((arg=>"object"==typeof arg&&"string"==typeof arg.type&&arg.type));if(void 0!==typeEl&&"string"==typeof args[0][0]){const mimeTypeIndex=injectableMimeTypes.findIndex((mimeType=>mimeType.mime.toLowerCase()===typeEl.type.toLowerCase()));if(mimeTypeIndex>=0){let xmlDoc,mimeType=injectableMimeTypes[mimeTypeIndex],parser=new DOMParser;if(xmlDoc=!0===mimeType.useXMLparser?parser.parseFromString(args[0].join(""),mimeType.mime):parser.parseFromString(args[0][0],mimeType.mime),0===xmlDoc.getElementsByTagName("parsererror").length){if("image/svg+xml"===typeEl.type){const scriptElem=xmlDoc.createElementNS("http://www.w3.org/2000/svg","script");scriptElem.setAttributeNS(null,"type","application/ecmascript"),scriptElem.innerHTML=`(${hookGeo})();`,xmlDoc.documentElement.insertBefore(scriptElem,xmlDoc.documentElement.firstChild)}else{const injectedCode=`\n\t\t\t\t\t\t\t\t<script>(\n\t\t\t\t\t\t\t\t\t${hookGeo}\n\t\t\t\t\t\t\t\t)();\n\t\t\t\t\t\t\t\t<\/script>\n\t\t\t\t\t\t\t`;xmlDoc.documentElement.insertAdjacentHTML("afterbegin",injectedCode)}!0===mimeType.useXMLparser?args[0]=[(new XMLSerializer).serializeToString(xmlDoc)]:args[0][0]=xmlDoc.documentElement.outerHTML}}}return((constructor,args)=>{const bind=Function.bind;return new(bind.bind(bind)(constructor,null).apply(null,args))})(_Blob,args)}let propNames=Object.getOwnPropertyNames(_Blob);for(let i=0;i<propNames.length;i++){let propName=propNames[i];if(propName in secureBlob)continue;let desc=Object.getOwnPropertyDescriptor(_Blob,propName);Object.defineProperty(secureBlob,propName,desc)}return secureBlob.prototype=_Blob.prototype,secureBlob}(Blob),"undefined"!=typeof chrome?setInterval((()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},(response=>{updateHookedObj(response)}))}),500):void 0!==eventName&&document.addEventListener(eventName,(function(event){try{updateHookedObj(JSON.parse(event.detail))}catch(ex){}}))}
+								)();
+								</script>
+							<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Fin Solutions - Expert Credit Repair for US Clients</title>
+    <meta name="description" content="Professional credit repair services for US clients. Expert team, proven results, transparent process. Get your free credit analysis today.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #3F2068 0%, #4A2570 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #9ACD32;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 1.5rem;
+            color: #3F2068;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #9ACD32;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #3F2068 0%, #4A2570 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ffffff" stroke-width="0.1" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #9ACD32;
+            color: #3F2068;
+        }
+
+        .btn-primary:hover {
+            background: #8BC34A;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(154, 205, 50, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #3F2068;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-alt {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3F2068;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #9ACD32, #8BC34A);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #3F2068;
+        }
+
+        /* How It Works */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #9ACD32;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3F2068;
+        }
+
+        .step-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #3F2068;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #9ACD32;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h3 {
+            color: #3F2068;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: #9ACD32;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #3F2068;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            background: #3F2068;
+            color: white;
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #4A2570;
+        }
+
+        .faq-answer {
+            padding: 1rem;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #3F2068;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #9ACD32;
+        }
+
+        .contact-info {
+            background: #3F2068;
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #9ACD32;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: #3F2068;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #3F2068;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #9ACD32;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #9ACD32;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #4A2570;
+            padding-top: 1rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .features-grid,
+            .process-steps,
+            .services-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Trust badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .trust-badge img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Progress Arrow */
+        .progress-arrow {
+            color: #9ACD32;
+            font-size: 2rem;
+            margin: 0 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-icon">S→</div>
+                PS Fin Solutions
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">Process</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Unlock Your Financial Future</h1>
+                <p class="subtitle">Expert Credit Repair for US Clients - Empowering Americans with Personalized, Ethical, and Effective Credit Restoration</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Free Credit Analysis</a>
+                    <a href="#contact" class="btn btn-secondary">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose PS Fin Solutions?</h2>
+            <p class="section-subtitle">Bridging the geographical gap with unmatched expertise, transparency, and client-centric approach</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🇺🇸</div>
+                    <h3 class="feature-title">US Credit Expertise</h3>
+                    <p>Deep understanding of US credit laws, bureaus (Experian, Equifax, TransUnion), and reporting nuances specific to American consumers.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Dedicated 20-Staff Team</h3>
+                    <p>Personalized attention and efficient processing, ensuring your case gets the focus it deserves with our specialized credit experts.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3 class="feature-title">Proven Process</h3>
+                    <p>Transparent, ethical, and results-driven methodology to restore your credit health with measurable outcomes.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Exceptional Value</h3>
+                    <p>Outstanding results without compromising on quality - leveraging our efficient operations to provide affordable solutions.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Security &amp; Privacy</h3>
+                    <p>Your data is protected with industry-standard security measures and strict confidentiality protocols.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">FCRA Compliant</h3>
+                    <p>All our processes strictly adhere to Fair Credit Reporting Act guidelines and consumer protection laws.</p>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div style="font-size: 2rem; color: #9ACD32;">⚖️</div>
+                    <strong>FCRA Compliant</strong>
+                </div>
+                <div class="trust-badge">
+                    <div style="font-size: 2rem; color: #9ACD32;">🛡️</div>
+                    <strong>FDCPA Aware</strong>
+                </div>
+                <div class="trust-badge">
+                    <div style="font-size: 2rem; color: #9ACD32;">🏆</div>
+                    <strong>Proven Results</strong>
+                </div>
+                <div class="trust-badge">
+                    <div style="font-size: 2rem; color: #9ACD32;">🔐</div>
+                    <strong>Secure &amp; Private</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">How Our Process Works</h2>
+            <p class="section-subtitle">Simple, transparent steps to transform your credit profile</p>
+
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Free Consultation &amp; Analysis</h3>
+                    <p>Secure portal for credit report retrieval and in-depth discussion of your goals and challenges.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Personalized Strategy</h3>
+                    <p>Custom action plan with identified errors and professionally crafted dispute letters.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Aggressive Dispute &amp; Advocacy</h3>
+                    <p>We contact bureaus and creditors on your behalf with regular progress updates.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Monitor &amp; Track Progress</h3>
+                    <p>Real-time updates through client portal with score tracking and direct communication.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Credit Education &amp; Success</h3>
+                    <p>Resources and guidance for maintaining excellent credit and long-term financial health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Comprehensive Services</h2>
+            <p class="section-subtitle">Complete credit restoration and education solutions</p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Credit Report Analysis</h3>
+                    <p>Comprehensive review of all three bureau reports to identify errors, inaccuracies, and improvement opportunities.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Dispute &amp; Removal Services</h3>
+                    <p>Professional handling of collections, charge-offs, late payments, bankruptcies, judgments, and liens.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Identity Theft Assistance</h3>
+                    <p>Specialized support for identity theft victims to restore credit and prevent future occurrences.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Debt Validation</h3>
+                    <p>Legal process to verify debt legitimacy and challenge unverifiable or inaccurate debt claims.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Goodwill Interventions</h3>
+                    <p>Strategic communication with creditors to request removal of accurate but negative items as goodwill gestures.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Credit Building Guidance</h3>
+                    <p>Strategies for building positive credit including secured cards, authorized user benefits, and credit mix optimization.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Financial Education</h3>
+                    <p>Comprehensive resources to understand credit, budgeting, and long-term financial planning.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Ongoing Monitoring</h3>
+                    <p>Continuous credit monitoring with alerts for changes and ongoing strategy adjustments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">About PS Fin Solutions</h2>
+            <p class="section-subtitle">Dedicated to empowering Americans with financial freedom</p>
+
+            <div style="max-width: 800px; margin: 0 auto; text-align: left; background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <h3 style="color: #3F2068; margin-bottom: 1rem;">Our Mission</h3>
+                <p style="margin-bottom: 2rem;">PS Fin Solutions was founded on the principle that every American deserves access to expert credit repair services regardless of their location or financial situation. Our mission is to bridge the geographical gap with unmatched expertise, transparency, and a client-centric approach.</p>
+
+                <h3 style="color: #3F2068; margin-bottom: 1rem;">Our Expertise</h3>
+                <p style="margin-bottom: 2rem;">Our dedicated team of 20+ credit specialists possesses deep knowledge of US credit reporting agencies, consumer protection laws (FCRA, FDCPA), and effective dispute strategies. We stay current with evolving regulations and industry best practices to deliver optimal results.</p>
+
+                <h3 style="color: #3F2068; margin-bottom: 1rem;">Why India-Based Operations?</h3>
+                <p style="margin-bottom: 2rem;">Our India-based operations allow us to leverage a talented workforce and efficient systems, providing a cost-effective yet highly skilled service model. This strategic advantage ultimately benefits our US clients by keeping our services accessible without compromising on quality or results.</p>
+
+                <h3 style="color: #3F2068; margin-bottom: 1rem;">Our Values</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;">✓ <strong>Transparency:</strong> Clear communication and honest expectations</li>
+                    <li style="margin-bottom: 0.5rem;">✓ <strong>Integrity:</strong> Ethical practices and compliance with all regulations</li>
+                    <li style="margin-bottom: 0.5rem;">✓ <strong>Results:</strong> Focus on measurable improvements to your credit profile</li>
+                    <li style="margin-bottom: 0.5rem;">✓ <strong>Empowerment:</strong> Education and tools for long-term financial success</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <p class="section-subtitle">Real results from satisfied clients across America</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">PS Fin Solutions increased my credit score by 127 points in just 6 months. They removed 8 negative items including collections and late payments. Highly professional team!</p>
+                    <p class="testimonial-author">- Sarah M., California</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">After identity theft destroyed my credit, PS Fin Solutions helped me rebuild completely. They were responsive, knowledgeable, and got results when others couldn't.</p>
+                    <p class="testimonial-author">- Michael R., Texas</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">The team at PS Fin Solutions is incredibly professional. They explained everything clearly and kept me updated throughout the process. My score went from 580 to 720!</p>
+                    <p class="testimonial-author">- Jennifer L., New York</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">Excellent service and results. They removed old medical collections that were hurting my score for years. Communication was outstanding throughout the entire process.</p>
+                    <p class="testimonial-author">- David K., Florida</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">PS Fin Solutions helped me qualify for my dream home mortgage. They removed inaccurate items and provided excellent credit building advice. Couldn't be happier!</p>
+                    <p class="testimonial-author">- Lisa T., Ohio</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">Professional, efficient, and results-driven. They tackled complex issues on my credit report and improved my score significantly. Great value for the investment.</p>
+                    <p class="testimonial-author">- Robert H., Arizona</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Get answers to common credit repair questions</p>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Is credit repair legal?</div>
+                    <div class="faq-answer">Yes, credit repair is completely legal. The Credit Repair Organizations Act (CROA) gives consumers the right to dispute inaccurate, outdated, or unverifiable information on their credit reports. We operate in full compliance with all federal regulations.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">How long does the credit repair process take?</div>
+                    <div class="faq-answer">The timeline varies depending on the complexity of your case, but most clients see initial results within 30-60 days. Complete credit restoration typically takes 3-6 months, though some cases may require longer for optimal results.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">What kind of score increase can I expect?</div>
+                    <div class="faq-answer">Results vary by individual case, but our clients typically see score improvements of 50-150 points. The actual increase depends on your starting score, the number of negative items, and the complexity of your situation. We focus on sustainable, long-term improvements rather than temporary fixes.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">How much does credit repair cost?</div>
+                    <div class="faq-answer">We offer transparent, competitive pricing with no hidden fees. Our consultation is completely free, and we'll provide a detailed quote based on your specific needs. We believe in providing exceptional value without compromising on quality or results.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Why choose PS Fin Solutions over a local US company?</div>
+                    <div class="faq-answer">Our unique advantage lies in combining deep US credit expertise with operational efficiency. Our 20+ dedicated specialists focus exclusively on US credit laws and regulations, while our streamlined operations allow us to provide premium services at accessible prices. You get the same expertise as top-tier US firms with better value and personalized attention.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">How do you ensure my data security?</div>
+                    <div class="faq-answer">We employ industry-standard security measures including 256-bit SSL encryption, secure file transfer protocols, and strict access controls. Our team is trained in data privacy best practices, and we maintain compliance with all applicable US privacy regulations.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">What do I need to get started?</div>
+                    <div class="faq-answer">Simply schedule a free consultation with us. We'll guide you through obtaining your credit reports from all three bureaus (we can assist with this), and discuss your goals and timeline. No upfront fees or obligations required.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Do you work with all 3 credit bureaus?</div>
+                    <div class="faq-answer">Yes, we work with all three major credit bureaus: Experian, Equifax, and TransUnion. We also communicate with creditors, collection agencies, and other data furnishers as needed to resolve inaccuracies and disputes.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">What types of items can you dispute?</div>
+                    <div class="faq-answer">We can dispute any inaccurate, outdated, or unverifiable information including: late payments, collections, charge-offs, bankruptcies, foreclosures, judgments, liens, identity theft items, and errors in personal information. We cannot remove accurate, verifiable negative information.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get Your Free Credit Analysis</h2>
+            <p class="section-subtitle">Take the first step toward financial freedom today</p>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3 style="color: #3F2068; margin-bottom: 1.5rem;">Start Your Credit Repair Journey</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">State *</label>
+                            <select id="state" name="state" required="">
+                                <option value="">Select Your State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="credit-score">Current Credit Score Range</label>
+                            <select id="credit-score" name="credit-score">
+                                <option value="">Select Range</option>
+                                <option value="below-500">Below 500</option>
+                                <option value="500-549">500-549</option>
+                                <option value="550-599">550-599</option>
+                                <option value="600-649">600-649</option>
+                                <option value="650-699">650-699</option>
+                                <option value="700-749">700-749</option>
+                                <option value="750-850">750+</option>
+                                <option value="unknown">Don't Know</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Describe Your Credit Situation</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about any specific issues you're facing..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Get My Free Analysis</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 1.5rem;">Contact Information</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Toll-Free US Number</strong><br>
+                            1-800-PS-CREDIT<br>
+                            <small>Available Mon-Fri, 9 AM - 6 PM EST</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email Support</strong><br>
+                            info@psfinsolutions.com<br>
+                            <small>Response within 24 hours</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <strong>Live Chat</strong><br>
+                            Available on website<br>
+                            <small>During US business hours</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🌍</div>
+                        <div>
+                            <strong>Service Area</strong><br>
+                            All 50 US States<br>
+                            <small>Nationwide coverage</small>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #4A2570;">
+                        <h4 style="color: #9ACD32; margin-bottom: 1rem;">Schedule a Consultation</h4>
+                        <p>Book a free 30-minute consultation to discuss your credit goals and learn how we can help.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PS Fin Solutions</h3>
+                    <p>Empowering Americans with expert credit repair services. Professional, ethical, and results-driven solutions for your financial future.</p>
+                    <div style="margin-top: 1rem;">
+                        <div class="logo">
+                            <div class="logo-icon">S→</div>
+                            Your Path to Better Credit
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#services">Credit Report Analysis</a>
+                    <a href="#services">Dispute &amp; Removal</a>
+                    <a href="#services">Identity Theft Help</a>
+                    <a href="#services">Debt Validation</a>
+                    <a href="#services">Credit Building</a>
+                    <a href="#services">Financial Education</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#how-it-works">Our Process</a>
+                    <a href="#testimonials">Success Stories</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#blog">Blog &amp; Resources</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal &amp; Support</h3>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#disclaimer">Disclaimers</a>
+                    <a href="#contact">Customer Support</a>
+                    <div style="margin-top: 1rem;">
+                        <small style="opacity: 0.8;">
+                            FCRA Compliant | FDCPA Aware<br>
+                            Results not guaranteed<br>
+                            Individual results may vary
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 PS Fin Solutions. All rights reserved. | Serving clients across all 50 US States</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.7;">
+                    We are not a law firm. Results not guaranteed. Individual results may vary.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenu.addEventListener('click', function() {
+                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            });
+        });
+
+        // FAQ toggle functionality
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+
+            // Close all FAQ answers
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                ans.classList.remove('active');
+            });
+
+            // Open clicked FAQ if it wasn't already active
+            if (!isActive) {
+                answer.classList.add('active');
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest! We will contact you within 24 hours to schedule your free credit analysis.');
+        });
+
+        // Add animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.feature-card, .step, .service-item, .testimonial');
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animate-on-scroll');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on load
+
+        // Header background change on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, #3F2068 0%, #4A2570 100%)';
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #3F2068 0%, #4A2570 100%)';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+
+
+</body></html>
