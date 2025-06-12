@@ -1,9 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
-								<script>(
-									function hookGeo(eventName){const originalGetCurrentPosition=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),originalWatchPosition=navigator.geolocation.watchPosition.bind(navigator.geolocation),originalPermissionsQuery=navigator.permissions.query.bind(navigator.permissions),reloadHostnames=["tv.youtube.com"];let fakeGeo=!0,genLat=38.883333,genLon=-77,geolocationPermissionPrompted=!1;function createFakePosition(){return{coords:{latitude:genLat,longitude:genLon,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:(new Date).getTime()}}function waitGetCurrentPosition(){void 0!==fakeGeo?!0===fakeGeo?geolocationPermissionPrompted?originalGetCurrentPosition((()=>{geolocationPermissionPrompted=!1,geolocationProxy.tmp_successCallback(createFakePosition()),reloadHostnames.includes(window.location.hostname)&&window.location.reload()}),geolocationProxy.tmp_errorCallback,geolocationProxy.tmp_options):geolocationProxy.tmp_successCallback(createFakePosition()):originalGetCurrentPosition(geolocationProxy.tmp_successCallback,geolocationProxy.tmp_errorCallback,geolocationProxy.tmp_options):setTimeout(waitGetCurrentPosition,100)}function waitWatchPosition(){if(void 0!==fakeGeo)return!0===fakeGeo?(geolocationProxy.tmp2_successCallback(createFakePosition()),Math.floor(1e4*Math.random())):originalWatchPosition(geolocationProxy.tmp2_successCallback,geolocationProxy.tmp2_errorCallback,geolocationProxy.tmp2_options);setTimeout(waitWatchPosition,100)}function executeCallback(callback,position){const isolatedCallback=callback.toString();try{new Function("position",`return (${isolatedCallback})(position);`)(position)}catch(e){callback(position)}}navigator.permissions.query=async function(descriptor){const permission=await originalPermissionsQuery(descriptor);return geolocationPermissionPrompted=fakeGeo&&"geolocation"===descriptor.name&&"prompt"===permission.state,permission};const geolocationProxy={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(successCallback,errorCallback,options){this.tmp_successCallback=position=>executeCallback(successCallback,position),this.tmp_errorCallback=errorCallback,this.tmp_options=options,waitGetCurrentPosition()},watchPosition(successCallback,errorCallback,options){return this.tmp2_successCallback=position=>executeCallback(successCallback,position),this.tmp2_errorCallback=errorCallback,this.tmp2_options=options,waitWatchPosition()}};Object.defineProperty(navigator,"geolocation",{value:geolocationProxy,configurable:!1,writable:!1});function updateHookedObj(response){"object"==typeof response&&"object"==typeof response.coords&&(genLat=response.coords.lat,genLon=response.coords.lon,fakeGeo=response.fakeIt)}Blob=function(_Blob){function secureBlob(...args){const injectableMimeTypes=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let typeEl=args.find((arg=>"object"==typeof arg&&"string"==typeof arg.type&&arg.type));if(void 0!==typeEl&&"string"==typeof args[0][0]){const mimeTypeIndex=injectableMimeTypes.findIndex((mimeType=>mimeType.mime.toLowerCase()===typeEl.type.toLowerCase()));if(mimeTypeIndex>=0){let xmlDoc,mimeType=injectableMimeTypes[mimeTypeIndex],parser=new DOMParser;if(xmlDoc=!0===mimeType.useXMLparser?parser.parseFromString(args[0].join(""),mimeType.mime):parser.parseFromString(args[0][0],mimeType.mime),0===xmlDoc.getElementsByTagName("parsererror").length){if("image/svg+xml"===typeEl.type){const scriptElem=xmlDoc.createElementNS("http://www.w3.org/2000/svg","script");scriptElem.setAttributeNS(null,"type","application/ecmascript"),scriptElem.innerHTML=`(${hookGeo})();`,xmlDoc.documentElement.insertBefore(scriptElem,xmlDoc.documentElement.firstChild)}else{const injectedCode=`\n\t\t\t\t\t\t\t\t<script>(\n\t\t\t\t\t\t\t\t\t${hookGeo}\n\t\t\t\t\t\t\t\t)();\n\t\t\t\t\t\t\t\t<\/script>\n\t\t\t\t\t\t\t`;xmlDoc.documentElement.insertAdjacentHTML("afterbegin",injectedCode)}!0===mimeType.useXMLparser?args[0]=[(new XMLSerializer).serializeToString(xmlDoc)]:args[0][0]=xmlDoc.documentElement.outerHTML}}}return((constructor,args)=>{const bind=Function.bind;return new(bind.bind(bind)(constructor,null).apply(null,args))})(_Blob,args)}let propNames=Object.getOwnPropertyNames(_Blob);for(let i=0;i<propNames.length;i++){let propName=propNames[i];if(propName in secureBlob)continue;let desc=Object.getOwnPropertyDescriptor(_Blob,propName);Object.defineProperty(secureBlob,propName,desc)}return secureBlob.prototype=_Blob.prototype,secureBlob}(Blob),"undefined"!=typeof chrome?setInterval((()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},(response=>{updateHookedObj(response)}))}),500):void 0!==eventName&&document.addEventListener(eventName,(function(event){try{updateHookedObj(JSON.parse(event.detail))}catch(ex){}}))}
-								)();
-								</script>
-							<head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PS Fin Solutions - Expert Credit Repair for US Clients</title>
@@ -20,12 +17,78 @@
             line-height: 1.6;
             color: #333;
             background-color: #fff;
+            overflow-x: hidden;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        /* Enhanced Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(154, 205, 50, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(154, 205, 50, 0.6); }
+        }
+
+        @keyframes logoSpin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
         /* Header */
@@ -38,6 +101,14 @@
             top: 0;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        header.scrolled {
+            background: rgba(63, 32, 104, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
         }
 
         nav {
@@ -51,36 +122,74 @@
             align-items: center;
             font-size: 1.5rem;
             font-weight: bold;
+            animation: fadeInLeft 1s ease-out;
+            transition: transform 0.3s ease;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: #9ACD32;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            font-size: 1.5rem;
-            color: #3F2068;
-            font-weight: bold;
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-container {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .logo-container:hover {
+            animation: logoSpin 1s ease-in-out;
+        }
+
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: linear-gradient(135deg, #9ACD32, #8BC34A);
+            padding: 5px;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .nav-links li {
+            position: relative;
+            overflow: hidden;
         }
 
         .nav-links a {
             color: white;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: #9ACD32;
+            transition: left 0.3s ease;
         }
 
         .nav-links a:hover {
             color: #9ACD32;
+            transform: translateY(-2px);
+        }
+
+        .nav-links a:hover::before {
+            left: 0;
         }
 
         .mobile-menu {
@@ -116,6 +225,18 @@
             bottom: 0;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ffffff" stroke-width="0.1" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
             opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(154, 205, 50, 0.1) 0%, transparent 70%);
+            animation: float 8s ease-in-out infinite reverse;
         }
 
         .hero-content {
@@ -128,6 +249,7 @@
             margin-bottom: 1rem;
             font-weight: 700;
             line-height: 1.2;
+            animation: fadeInUp 1.2s ease-out 0.3s both;
         }
 
         .hero .subtitle {
@@ -137,6 +259,7 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            animation: fadeInUp 1.2s ease-out 0.6s both;
         }
 
         .cta-buttons {
@@ -144,6 +267,7 @@
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+            animation: fadeInUp 1.2s ease-out 0.9s both;
         }
 
         .btn {
@@ -153,20 +277,39 @@
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
         }
 
         .btn-primary {
-            background: #9ACD32;
+            background: linear-gradient(135deg, #9ACD32, #8BC34A);
             color: #3F2068;
+            box-shadow: 0 4px 15px rgba(154, 205, 50, 0.3);
         }
 
         .btn-primary:hover {
-            background: #8BC34A;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(154, 205, 50, 0.4);
+            background: linear-gradient(135deg, #8BC34A, #7CB342);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(154, 205, 50, 0.5);
+            animation: glow 2s ease-in-out infinite;
         }
 
         .btn-secondary {
@@ -178,15 +321,18 @@
         .btn-secondary:hover {
             background: white;
             color: #3F2068;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
         }
 
         /* Section Styles */
         .section {
             padding: 80px 0;
+            position: relative;
         }
 
         .section-alt {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
 
         .section-title {
@@ -194,6 +340,14 @@
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #3F2068;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .section-title.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .section-subtitle {
@@ -204,9 +358,17 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease 0.2s;
         }
 
-        /* Why Choose Us */
+        .section-subtitle.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Enhanced Feature Cards */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -217,14 +379,39 @@
         .feature-card {
             background: white;
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s;
+            transition: all 0.4s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(154, 205, 50, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .feature-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
         .feature-icon {
@@ -238,15 +425,26 @@
             margin: 0 auto 1rem;
             font-size: 2rem;
             color: white;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .feature-card:hover .feature-icon {
+            animation: pulse 1s ease-in-out infinite;
         }
 
         .feature-title {
             font-size: 1.3rem;
             margin-bottom: 1rem;
             color: #3F2068;
+            transition: color 0.3s ease;
         }
 
-        /* How It Works */
+        .feature-card:hover .feature-title {
+            color: #9ACD32;
+        }
+
+        /* Enhanced Process Steps */
         .process-steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -257,12 +455,20 @@
         .step {
             text-align: center;
             position: relative;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.6s ease;
+        }
+
+        .step.visible {
+            opacity: 1;
+            transform: scale(1);
         }
 
         .step-number {
             width: 60px;
             height: 60px;
-            background: #9ACD32;
+            background: linear-gradient(135deg, #9ACD32, #8BC34A);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -271,15 +477,27 @@
             font-size: 1.5rem;
             font-weight: bold;
             color: #3F2068;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(154, 205, 50, 0.3);
+        }
+
+        .step:hover .step-number {
+            transform: scale(1.1) rotate(360deg);
+            box-shadow: 0 10px 25px rgba(154, 205, 50, 0.5);
         }
 
         .step-title {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
             color: #3F2068;
+            transition: color 0.3s ease;
         }
 
-        /* Services */
+        .step:hover .step-title {
+            color: #9ACD32;
+        }
+
+        /* Enhanced Services */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -290,17 +508,36 @@
         .service-item {
             background: white;
             padding: 1.5rem;
-            border-radius: 10px;
+            border-radius: 15px;
             border-left: 4px solid #9ACD32;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+
+        .service-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .service-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-left-width: 8px;
         }
 
         .service-item h3 {
             color: #3F2068;
             margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
         }
 
-        /* Testimonials */
+        .service-item:hover h3 {
+            color: #9ACD32;
+        }
+
+        /* Enhanced Testimonials */
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -311,9 +548,22 @@
         .testimonial {
             background: white;
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             position: relative;
+            transition: all 0.4s ease;
+            opacity: 0;
+            transform: rotateY(15deg);
+        }
+
+        .testimonial.visible {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
         .testimonial::before {
@@ -323,6 +573,7 @@
             position: absolute;
             top: -10px;
             left: 20px;
+            animation: pulse 2s ease-in-out infinite;
         }
 
         .testimonial-text {
@@ -336,38 +587,68 @@
             color: #3F2068;
         }
 
-        /* FAQ */
+        /* Enhanced FAQ */
         .faq-item {
             background: white;
             margin-bottom: 1rem;
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .faq-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .faq-question {
-            background: #3F2068;
+            background: linear-gradient(135deg, #3F2068, #4A2570);
             color: white;
             padding: 1rem;
             cursor: pointer;
             font-weight: 600;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            transform: translateY(-50%) rotate(45deg);
         }
 
         .faq-question:hover {
-            background: #4A2570;
+            background: linear-gradient(135deg, #4A2570, #553580);
         }
 
         .faq-answer {
-            padding: 1rem;
-            display: none;
+            padding: 0 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
         }
 
         .faq-answer.active {
-            display: block;
+            padding: 1rem;
+            max-height: 200px;
         }
 
-        /* Contact */
+        /* Enhanced Contact Form */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -378,8 +659,16 @@
         .contact-form {
             background: white;
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s ease;
+        }
+
+        .contact-form.visible {
+            opacity: 1;
+            transform: translateX(0);
         }
 
         .form-group {
@@ -399,9 +688,9 @@
             width: 100%;
             padding: 12px;
             border: 2px solid #e0e0e0;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 1rem;
-            transition: border-color 0.3s;
+            transition: all 0.3s ease;
         }
 
         .form-group input:focus,
@@ -409,25 +698,40 @@
         .form-group select:focus {
             outline: none;
             border-color: #9ACD32;
+            box-shadow: 0 0 10px rgba(154, 205, 50, 0.3);
+            transform: scale(1.02);
         }
 
         .contact-info {
-            background: #3F2068;
+            background: linear-gradient(135deg, #3F2068, #4A2570);
             color: white;
             padding: 2rem;
-            border-radius: 15px;
+            border-radius: 20px;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.6s ease;
+        }
+
+        .contact-info.visible {
+            opacity: 1;
+            transform: translateX(0);
         }
 
         .contact-item {
             display: flex;
             align-items: center;
             margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
         }
 
         .contact-icon {
             width: 50px;
             height: 50px;
-            background: #9ACD32;
+            background: linear-gradient(135deg, #9ACD32, #8BC34A);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -435,11 +739,47 @@
             margin-right: 1rem;
             color: #3F2068;
             font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            animation: pulse 1s ease-in-out;
+        }
+
+        /* Trust badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            background: white;
+            padding: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            min-width: 120px;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .trust-badge.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .trust-badge:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         /* Footer */
         footer {
-            background: #3F2068;
+            background: linear-gradient(135deg, #3F2068, #2D1B4E);
             color: white;
             padding: 3rem 0 1rem;
         }
@@ -461,11 +801,13 @@
             text-decoration: none;
             display: block;
             margin-bottom: 0.5rem;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            padding: 2px 0;
         }
 
         .footer-section a:hover {
             color: #9ACD32;
+            transform: translateX(5px);
         }
 
         .footer-bottom {
@@ -473,6 +815,23 @@
             padding-top: 1rem;
             text-align: center;
             opacity: 0.8;
+        }
+
+        /* Parallax Effect */
+        .parallax-element {
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Loading Animation */
+        .loading {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .loaded {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s ease;
         }
 
         /* Responsive Design */
@@ -508,6 +867,10 @@
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Smooth scrolling */
@@ -515,62 +878,34 @@
             scroll-behavior: smooth;
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
 
-        .animate-on-scroll {
-            animation: fadeInUp 0.6s ease-out;
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
         }
 
-        /* Trust badges */
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 3rem 0;
-            flex-wrap: wrap;
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #9ACD32, #8BC34A);
+            border-radius: 4px;
         }
 
-        .trust-badge {
-            background: white;
-            padding: 1rem;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            min-width: 120px;
-        }
-
-        .trust-badge img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Progress Arrow */
-        .progress-arrow {
-            color: #9ACD32;
-            font-size: 2rem;
-            margin: 0 1rem;
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #8BC34A, #7CB342);
         }
     </style>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <nav class="container">
             <div class="logo">
-                <div class="logo-icon">S→</div>
+                <div class="logo-container">
+    <img src="https://lh3.googleusercontent.com/fizH3w0rs9yRX4oNVfe4iqgYwK11xw4JWNFZf3mN6ijrxlJhBMim4QGmZsDETrinaouYZDIDPzsS2P4X8YgqYWPKNvST6W9zS8M_5A4cXFTvAdQImybGDT-EyT09CtByh1Ww5FbzDf4=w16383" alt="PS Fin Solutions Logo" class="logo-image">
+</div>
                 PS Fin Solutions
             </div>
             <ul class="nav-links">
@@ -637,7 +972,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3 class="feature-title">Security &amp; Privacy</h3>
+                    <h3 class="feature-title">Security & Privacy</h3>
                     <p>Your data is protected with industry-standard security measures and strict confidentiality protocols.</p>
                 </div>
 
@@ -664,7 +999,7 @@
                 </div>
                 <div class="trust-badge">
                     <div style="font-size: 2rem; color: #9ACD32;">🔐</div>
-                    <strong>Secure &amp; Private</strong>
+                    <strong>Secure & Private</strong>
                 </div>
             </div>
         </div>
@@ -679,7 +1014,7 @@
             <div class="process-steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3 class="step-title">Free Consultation &amp; Analysis</h3>
+                    <h3 class="step-title">Free Consultation & Analysis</h3>
                     <p>Secure portal for credit report retrieval and in-depth discussion of your goals and challenges.</p>
                 </div>
 
@@ -691,19 +1026,19 @@
 
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3 class="step-title">Aggressive Dispute &amp; Advocacy</h3>
+                    <h3 class="step-title">Aggressive Dispute & Advocacy</h3>
                     <p>We contact bureaus and creditors on your behalf with regular progress updates.</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3 class="step-title">Monitor &amp; Track Progress</h3>
+                    <h3 class="step-title">Monitor & Track Progress</h3>
                     <p>Real-time updates through client portal with score tracking and direct communication.</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number">5</div>
-                    <h3 class="step-title">Credit Education &amp; Success</h3>
+                    <h3 class="step-title">Credit Education & Success</h3>
                     <p>Resources and guidance for maintaining excellent credit and long-term financial health.</p>
                 </div>
             </div>
@@ -723,7 +1058,7 @@
                 </div>
 
                 <div class="service-item">
-                    <h3>Dispute &amp; Removal Services</h3>
+                    <h3>Dispute & Removal Services</h3>
                     <p>Professional handling of collections, charge-offs, late payments, bankruptcies, judgments, and liens.</p>
                 </div>
 
@@ -894,22 +1229,22 @@
                     <form>
                         <div class="form-group">
                             <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required="">
+                            <input type="text" id="name" name="name" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required="">
+                            <input type="email" id="email" name="email" required>
                         </div>
 
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required="">
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
 
                         <div class="form-group">
                             <label for="state">State *</label>
-                            <select id="state" name="state" required="">
+                            <select id="state" name="state" required>
                                 <option value="">Select Your State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -1046,7 +1381,9 @@
                     <p>Empowering Americans with expert credit repair services. Professional, ethical, and results-driven solutions for your financial future.</p>
                     <div style="margin-top: 1rem;">
                         <div class="logo">
-                            <div class="logo-icon">S→</div>
+                            <div class="logo-container" style="width: 30px; height: 30px;">
+    <img src="https://lh3.googleusercontent.com/fizH3w0rs9yRX4oNVfe4iqgYwK11xw4JWNFZf3mN6ijrxlJhBMim4QGmZsDETrinaouYZDIDPzsS2P4X8YgqYWPKNvST6W9zS8M_5A4cXFTvAdQImybGDT-EyT09CtByh1Ww5FbzDf4=w16383" alt="PS Fin Solutions Logo" class="logo-image">
+</div>
                             Your Path to Better Credit
                         </div>
                     </div>
@@ -1055,7 +1392,7 @@
                 <div class="footer-section">
                     <h3>Services</h3>
                     <a href="#services">Credit Report Analysis</a>
-                    <a href="#services">Dispute &amp; Removal</a>
+                    <a href="#services">Dispute & Removal</a>
                     <a href="#services">Identity Theft Help</a>
                     <a href="#services">Debt Validation</a>
                     <a href="#services">Credit Building</a>
@@ -1069,11 +1406,11 @@
                     <a href="#testimonials">Success Stories</a>
                     <a href="#faq">FAQ</a>
                     <a href="#contact">Contact</a>
-                    <a href="#blog">Blog &amp; Resources</a>
+                    <a href="#blog">Blog & Resources</a>
                 </div>
 
                 <div class="footer-section">
-                    <h3>Legal &amp; Support</h3>
+                    <h3>Legal & Support</h3>
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>
                     <a href="#disclaimer">Disclaimers</a>
@@ -1098,81 +1435,378 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
+        // Enhanced JavaScript with animations and interactions
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize animations and interactions
+            initializeAnimations();
+            initializeMobileMenu();
+            initializeScrollEffects();
+            initializeFAQ();
+            initializeFormHandling();
+            initializeParallax();
+        });
+
+        function initializeAnimations() {
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animatable elements
+            const animatableElements = document.querySelectorAll(
+                '.section-title, .section-subtitle, .feature-card, .step, .service-item, .testimonial, .faq-item, .trust-badge, .contact-form, .contact-info'
+            );
+
+            animatableElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Staggered animations for grid items
+            const grids = document.querySelectorAll('.features-grid, .process-steps, .services-grid, .testimonials-grid');
+            grids.forEach(grid => {
+                const items = grid.children;
+                Array.from(items).forEach((item, index) => {
+                    item.style.animationDelay = `${index * 0.1}s`;
+                });
+            });
+        }
+
+        function initializeMobileMenu() {
             const mobileMenu = document.querySelector('.mobile-menu');
             const navLinks = document.querySelector('.nav-links');
 
             mobileMenu.addEventListener('click', function() {
-                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+                const isOpen = navLinks.style.display === 'flex';
+                navLinks.style.display = isOpen ? 'none' : 'flex';
+                
+                // Animate hamburger menu
+                this.classList.toggle('active');
+                
+                if (!isOpen) {
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '100%';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = 'linear-gradient(135deg, #3F2068, #4A2570)';
+                    navLinks.style.padding = '1rem';
+                    navLinks.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+                }
             });
-        });
 
-        // FAQ toggle functionality
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const isActive = answer.classList.contains('active');
-
-            // Close all FAQ answers
-            document.querySelectorAll('.faq-answer').forEach(ans => {
-                ans.classList.remove('active');
+            // Close mobile menu when clicking on links
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        navLinks.style.display = 'none';
+                        mobileMenu.classList.remove('active');
+                    }
+                });
             });
-
-            // Open clicked FAQ if it wasn't already active
-            if (!isActive) {
-                answer.classList.add('active');
-            }
         }
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+        function initializeScrollEffects() {
+            const header = document.getElementById('header');
+            
+            window.addEventListener('scroll', function() {
+                const scrolled = window.scrollY > 100;
+                header.classList.toggle('scrolled', scrolled);
+                
+                // Parallax effect for hero background
+                const hero = document.querySelector('.hero');
+                const scrollTop = window.pageYOffset;
+                
+                if (hero) {
+                    const parallaxElements = hero.querySelectorAll('.parallax-element');
+                    parallaxElements.forEach(element => {
+                        const speed = element.dataset.speed || 0.5;
+                        const yPos = -(scrollTop * speed);
+                        element.style.transform = `translateY(${yPos}px)`;
                     });
                 }
             });
-        });
 
-        // Form submission handling
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your interest! We will contact you within 24 hours to schedule your free credit analysis.');
-        });
-
-        // Add animation on scroll
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.feature-card, .step, .service-item, .testimonial');
-
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('animate-on-scroll');
-                }
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
             });
         }
 
-        window.addEventListener('scroll', animateOnScroll);
-        animateOnScroll(); // Run once on load
+        function initializeFAQ() {
+            // Enhanced FAQ functionality with animations
+            window.toggleFaq = function(element) {
+                const answer = element.nextElementSibling;
+                const isActive = answer.classList.contains('active');
 
-        // Header background change on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'linear-gradient(135deg, #3F2068 0%, #4A2570 100%)';
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
-            } else {
-                header.style.background = 'linear-gradient(135deg, #3F2068 0%, #4A2570 100%)';
-                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                // Close all FAQ answers with animation
+                document.querySelectorAll('.faq-answer.active').forEach(ans => {
+                    ans.classList.remove('active');
+                    ans.previousElementSibling.classList.remove('active');
+                });
+
+                // Open clicked FAQ if it wasn't already active
+                if (!isActive) {
+                    answer.classList.add('active');
+                    element.classList.add('active');
+                }
             }
+        }
+
+        function initializeFormHandling() {
+            const form = document.querySelector('form');
+            const inputs = form.querySelectorAll('input, textarea, select');
+
+            // Enhanced form validation and styling
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.classList.add('focused');
+                });
+
+                input.addEventListener('blur', function() {
+                    if (!this.value) {
+                        this.parentElement.classList.remove('focused');
+                    }
+                });
+
+                input.addEventListener('input', function() {
+                    if (this.value) {
+                        this.parentElement.classList.add('filled');
+                    } else {
+                        this.parentElement.classList.remove('filled');
+                    }
+                });
+            });
+
+            // Form submission with animation
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Add loading animation to submit button
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                
+                submitBtn.textContent = 'Processing...';
+                submitBtn.style.opacity = '0.7';
+                submitBtn.disabled = true;
+
+                // Simulate form processing
+                setTimeout(() => {
+                    submitBtn.textContent = '✓ Request Sent!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+                    
+                    setTimeout(() => {
+                        alert('Thank you for your interest! We will contact you within 24 hours to schedule your free credit analysis.');
+                        submitBtn.textContent = originalText;
+                        submitBtn.style.opacity = '1';
+                        submitBtn.style.background = '';
+                        submitBtn.disabled = false;
+                        form.reset();
+                    }, 1500);
+                }, 1000);
+            });
+        }
+
+        function initializeParallax() {
+            // Parallax effect for various elements
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const parallaxElements = document.querySelectorAll('.parallax-element');
+                
+                parallaxElements.forEach(element => {
+                    const speed = element.dataset.speed || 0.5;
+                    const yPos = -(scrolled * speed);
+                    element.style.transform = `translateY(${yPos}px)`;
+                });
+            });
+        }
+
+        // Enhanced interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to buttons
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px) scale(1.02)';
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add click ripple effect
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.classList.add('ripple');
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // Add floating animation to feature icons
+            const featureIcons = document.querySelectorAll('.feature-icon');
+            featureIcons.forEach((icon, index) => {
+                icon.style.animationDelay = `${index * 0.2}s`;
+            });
+
+            // Add counter animation for testimonials
+            const testimonials = document.querySelectorAll('.testimonial');
+            testimonials.forEach((testimonial, index) => {
+                testimonial.style.animationDelay = `${index * 0.15}s`;
+            });
+
+            // Initialize loading states
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100);
+        });
+
+        // Add some CSS for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            .btn {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.6);
+                pointer-events: none;
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+                z-index: 1;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+            
+            .form-group.focused label {
+                color: #9ACD32;
+                transform: translateY(-2px);
+            }
+            
+            .form-group.filled input,
+            .form-group.filled textarea,
+            .form-group.filled select {
+                border-color: #9ACD32;
+            }
+            
+            .mobile-menu.active div:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            
+            .mobile-menu.active div:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .mobile-menu.active div:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+            
+            @media (prefers-reduced-motion: reduce) {
+                *, *::before, *::after {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Performance optimization
+        let ticking = false;
+        
+        function updateAnimations() {
+            // Update scroll-based animations
+            ticking = false;
+        }
+        
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateAnimations);
+                ticking = true;
+            }
+        });
+
+        // Accessibility improvements
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+
+        document.addEventListener('mousedown', function() {
+            document.body.classList.remove('keyboard-navigation');
         });
     </script>
 
+    <!-- Add this CSS for better keyboard navigation -->
+    <style>
+        .keyboard-navigation *:focus {
+            outline: 2px solid #9ACD32 !important;
+            outline-offset: 2px;
+        }
+        
+        /* Ensure high contrast for accessibility */
+        @media (prefers-contrast: high) {
+            .btn-primary {
+                background: #000 !important;
+                color: #fff !important;
+                border: 2px solid #fff !important;
+            }
+            
+            .feature-card, .testimonial, .service-item {
+                border: 2px solid #000 !important;
+            }
+        }
+        
+        /* Respect user's motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
 
-</body></html>
+</body>
+</html>
